@@ -38,7 +38,7 @@ Then we need to reload bashrc for changes to take effect
 
 `source ~/.bashrc`
 
-Use the function
+3. Use the function
 
 Call the Function Use the function in your terminal or script by providing the name of the environment variable to edit:
 
