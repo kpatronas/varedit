@@ -1,11 +1,12 @@
 # Varedit
 
-## Overview of the Function
+### 📝 Overview 
 
-The varedit function creates or modifies environment variables in memory. 
+The varedit function creates or modifies environment variables in memory. <br>
 Changes made using this function are session-specific and will not persist after the terminal session ends.
 
-## The varedit function performs the following tasks:
+### ⚡ Features
+The varedit function performs the following tasks:
 
 1. Check for vipe Installation: Ensures vipe is installed on the system before proceeding.
 
@@ -17,32 +18,48 @@ Changes made using this function are session-specific and will not persist after
 
 5. Handle Changes: Updates the variable with the new value if changes are made. If no changes are made and the variable was created as empty, it unsets the variable.
 
-## Step-by-Step Guide to Using varedit
-1. Ensure vipe is Installed
+### 📖 Step-by-Step Guide to Using varedit
+Ensure vipe is Installed.
 
-Install vipe if it is not already available on your system.
+#### Install vipe
+if it is not already available on your system.
 
-On Debian/Ubuntu: `sudo apt install moreutils`
+On Debian / Ubuntu:
+```sh
+sudo apt install moreutils
+```
 
-On Red Hat/Fedora: `sudo dnf install moreutils`
+On Red Hat / Fedora
+```sh
+sudo dnf install moreutils
+```
 
-On macOS (with Homebrew): `brew install moreutils`
+On macOS (with Homebrew): 
+```sh
+brew install moreutils
+```
 
-2. Add the function to bashrc
+#### Add the function to bashrc
 
 Add the function to your profile bashrc file, append to the end.
 
-`vim ~/.bashrc`
+```sh
+vim ~/.bashrc
+```
 
 Then we need to reload bashrc for changes to take effect
 
-`source ~/.bashrc`
+```sh
+source ~/.bashrc
+```
 
-3. Use the function
+### 💁 Use the function
 
 Call the Function Use the function in your terminal or script by providing the name of the environment variable to edit:
 
-`varedit VAR_NAME`
+```sh
+varedit VAR_NAME
+```
 
 1. Edit in vipe
 
